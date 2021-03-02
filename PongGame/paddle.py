@@ -8,20 +8,16 @@ class Paddle(Turtle):
 
     def __init__(self, position):
         super().__init__()
-        self.create_paddle(position)
-
-    def create_paddle(self, position):
-        self.paddle = Turtle('square')        
-        self.paddle.penup()
-        self.paddle.color('white')
-        self.paddle.goto(position)
-        self.paddle.shapesize(stretch_wid=PADDLE_WIDTH, stretch_len=PADDLE_LEN)
-
+        self.shape('square')     
+        self.color('white')
+        self.penup()
+        self.shapesize(stretch_wid=PADDLE_WIDTH, stretch_len=PADDLE_LEN)
+        self.goto(position)
+        
     def up(self):
-        new_y = self.paddle.ycor() + STEP
-        self.paddle.goto(self.paddle.xcor(), new_y)
+        new_y = self.ycor() + STEP
+        self.goto(self.xcor(), new_y)
     
-
     def down(self):
-        new_y = self.paddle.ycor() - STEP
-        self.paddle.goto(self.paddle.xcor(), new_y)
+        new_y = self.ycor() - STEP
+        self.goto(self.xcor(), new_y)
