@@ -12,9 +12,8 @@ class Player(Turtle):
         self.color('black')
         self.penup()
         self.goto(STARTING_POSITION)
-        self.left(90)
+        self.setheading(90)
 
 
-    def up(self):
-        new_y = self.ycor() + MOVE_DISTANCE
-        self.goto(0, new_y)
+    def go_up(self):
+        self.forward(MOVE_DISTANCE)
