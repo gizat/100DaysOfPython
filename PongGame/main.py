@@ -40,12 +40,10 @@ while game_on:
     if ball.xcor() > 380:
         ball.reset()
         scoreboard.l_point()
-        time_speed -= 0.01
 
     if  ball.xcor() < -380:
         ball.reset()
         scoreboard.r_point()
-        time_speed -= 0.01
 
 
 
