@@ -8,3 +8,6 @@ A repo with fun projects. The list of projects:
 4. [Spot Painting using Turtle](https://github.com/gizat/playground/tree/main/SpotPainting)
 5. [Etch-a-Sketch using Turtle](https://github.com/gizat/playground/tree/main/Etch-a-Sketch)
 6. [Turtle Race](https://github.com/gizat/playground/tree/main/TurtleRace)
+7. [Snake Game](https://github.com/gizat/playground/tree/main/SnakeGame)
+8. [Pong](https://github.com/gizat/playground/tree/main/PongGame)
+9. [Turtle Crossing Game](https://github.com/gizat/playground/tree/main/TurtleCrossingGame)
