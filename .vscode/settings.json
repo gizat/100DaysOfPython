@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/gizatm/Applications/miniconda/envs/python-playground/bin/python"
+    "python.pythonPath": "/Users/gizatm/Applications/miniconda/envs/python-playground/bin/python",
+    "python.terminal.executeInFileDir":true,
 }
