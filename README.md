@@ -12,3 +12,4 @@ A repo with fun projects. The list of projects:
 8. [Pong](https://github.com/gizat/playground/tree/main/PongGame)
 9. [Turtle Crossing Game](https://github.com/gizat/playground/tree/main/TurtleCrossingGame)
 10. [Mail Merge](https://github.com/gizat/playground/tree/main/MailMerge)
+11. [U.S. States Game](https://github.com/gizat/playground/tree/main/USStatesGame)
