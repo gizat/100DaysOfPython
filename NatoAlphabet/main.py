@@ -1,10 +1,14 @@
-# numbers = [1, 2, 3]
-# new_list = [n + 1 for n in numbers]
-# 
-# print(new_list)
+import pandas
 
+df = pandas.read_csv("nato_phonetic_alphabet.csv")
+nato_alphabet = {row.letter:row.code for (index, row) in df.iterrows()}
 
-names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
-short_names = [name.upper() for name in names if len(name) > 4]
-print(short_names)
+word = input("Enter a word: ").upper()
+word_in_nato = [nato_alphabet[letter] for letter in word]
+print(word_in_nato)
+
+#TODO 1. Create a dictionary in this format:
+# {"A": "Alfa", "B": "Bravo"}
+
+#TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
