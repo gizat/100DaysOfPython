@@ -13,3 +13,4 @@ A repo with fun projects. The list of projects:
 9. [Turtle Crossing Game](https://github.com/gizat/playground/tree/main/TurtleCrossingGame)
 10. [Mail Merge](https://github.com/gizat/playground/tree/main/MailMerge)
 11. [U.S. States Game](https://github.com/gizat/playground/tree/main/USStatesGame)
+12. [NATO Alphabet Converter](https://github.com/gizat/playground/tree/main/NatoAlphabet)
