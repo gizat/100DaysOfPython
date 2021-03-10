@@ -14,3 +14,5 @@ A repo with fun projects. The list of projects:
 10. [Mail Merge](https://github.com/gizat/playground/tree/main/MailMerge)
 11. [U.S. States Game](https://github.com/gizat/playground/tree/main/USStatesGame)
 12. [NATO Alphabet Converter](https://github.com/gizat/playground/tree/main/NatoAlphabet)
+13. [Pomodoro App](https://github.com/gizat/playground/tree/main/PomodoroApp)
+14. [Password Manager](sdf)
