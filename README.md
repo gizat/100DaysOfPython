@@ -16,3 +16,4 @@ A repo with fun projects. The list of projects:
 12. [NATO Alphabet Converter](https://github.com/gizat/playground/tree/main/NatoAlphabet)
 13. [Pomodoro App](https://github.com/gizat/playground/tree/main/PomodoroApp)
 14. [Password Manager](https://github.com/gizat/playground/tree/main/PasswordManager)
+15. 
