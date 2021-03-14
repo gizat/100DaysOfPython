@@ -1,6 +1,18 @@
 {
     "Amazon": {
         "email": "gizat@gmail.com",
-        "password": "!$a1L4vpSbW)g&k"
+        "password": "lrE3RF$%KoX8Y1(w%"
+    },
+    "Facebook": {
+        "email": "gizat@gmail.com",
+        "password": "&T#NI69AfJv8z"
+    },
+    "Ebay": {
+        "email": "gizat@gmail.com",
+        "password": "n(PGzP90e2#Z+i+"
+    },
+    "Kaggle": {
+        "email": "gizat@gmail.com",
+        "password": "k%0gKQEh2hq#C#"
     }
 }

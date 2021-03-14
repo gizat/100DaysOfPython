@@ -7,6 +7,26 @@ FONT_NAME = "Arial"
 FONT_SIZE = 14
 DEFAULT_EMAIL = "gizat@gmail.com"
 
+
+# ---------------------------- FIND PASSWORD ------------------------------- #
+def find_password():
+    website = entry_website.get()
+
+    try:
+        with open("data.json", mode="r") as file:
+            # Reading old data
+            data = json.load(file)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Oops", message="No Data File Found.")
+    else:
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title="Entry found", message=f"Email: {email} \nPassword: {password}")
+        else:
+            messagebox.showinfo(title="Entry not found", message=f"Sorry, no entry found.")
+
+
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
     entry_password.delete(0, END)
@@ -83,8 +103,8 @@ title_email.grid(column=0, row=2)
 title_password = Label(text="Password:", font=(FONT_NAME, FONT_SIZE), bg="white", highlightthickness=0)
 title_password.grid(column=0, row=3)
 
-entry_website = Entry(width=35, highlightthickness=0, bg="white")
-entry_website.grid(column=1, row=1, columnspan=2)
+entry_website = Entry(width=19, highlightthickness=0, bg="white")
+entry_website.grid(column=1, row=1)
 entry_website.focus()
 
 entry_email = Entry(width=35, highlightthickness=0, bg="white")
@@ -93,6 +113,9 @@ entry_email.insert(END, DEFAULT_EMAIL)
 
 entry_password = Entry(width=19, highlightthickness=0, bg="white")
 entry_password.grid(column=1, row=3)
+
+button_search = Button(text="Search", highlightthickness=0, bg="white", width=12, command=find_password)
+button_search.grid(column=2, row=1)
 
 button_generate = Button(text="Generate password", highlightthickness=0, bg="white", width=12, command=generate_password)
 button_generate.grid(column=2, row=3)
