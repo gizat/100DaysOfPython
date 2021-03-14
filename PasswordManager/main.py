@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from random import choice, randint, shuffle
-import pyperclip
+import json
 
 FONT_NAME = "Arial"
 FONT_SIZE = 14
@@ -35,19 +35,34 @@ def save():
     website = entry_website.get()
     email = entry_email.get()
     password = entry_password.get()
+    new_data = {
+        website: {
+            "email":email,
+            "password":password,
+        }
+    }
 
     if len(website) == 0 or len(password) == 0:
         messagebox.showinfo(title="Oops", message="Please don't leave any fields empty.")
     else:
-        is_ok = messagebox.askokcancel(title="website", message=f"These are the details entered: \nEmail: {email} \nPassword: {password} \nIs it OK to save?")
-    
-        if is_ok:
-            with open("data.txt", mode="a") as file:    
-                file.write(f"{website} | {email} | {password}\n")
-                entry_password.delete(0, END)
-                entry_email.delete(0, END)
-                entry_email.insert(END, DEFAULT_EMAIL)
-                entry_website.delete(0, END)
+        try:
+            with open("data.json", mode="r") as file:
+                # Reading old data
+                data = json.load(file)
+        except FileNotFoundError:
+            with open("data.json", mode="w") as file:
+                json.dump(new_data, file, indent=4)
+        else:
+            # Updating old data with new data
+            data.update(new_data)
+            with open("data.json", mode="w") as file:
+                # Saving updated data
+                json.dump(data, file, indent=4)
+        finally:
+            entry_password.delete(0, END)
+            entry_email.delete(0, END)
+            entry_email.insert(END, DEFAULT_EMAIL)
+            entry_website.delete(0, END)
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
