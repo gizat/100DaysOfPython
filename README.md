@@ -17,3 +17,4 @@ A repo with fun projects. The list of projects:
 13. [Pomodoro App](https://github.com/gizat/playground/tree/main/PomodoroApp)
 14. [Password Manager](https://github.com/gizat/playground/tree/main/PasswordManager)
 15. [FlashCard App](https://github.com/gizat/playground/tree/main/FlashCardApp)
+16. [Birhtday Wisher using SMTPlib](https://github.com/gizat/playground/tree/main/BirthdayWisherSMTPLIB)
