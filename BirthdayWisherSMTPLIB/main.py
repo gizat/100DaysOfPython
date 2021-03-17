@@ -3,8 +3,8 @@ import datetime as dt
 import smtplib
 import random
 
-my_email = "fryphilip99@yahoo.com"
-password = "foalcvfybucuxgrf"
+my_email = ""
+password = ""
 
 today = (dt.datetime.now().month, dt.datetime.now().day)
 birthdays = pandas.read_csv("birthdays.csv")
