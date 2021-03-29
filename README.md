@@ -19,3 +19,4 @@ A repo with fun projects. The list of projects:
 15. [FlashCard App](https://github.com/gizat/playground/tree/main/FlashCardApp)
 16. [Birhtday Wisher using SMTPlib](https://github.com/gizat/playground/tree/main/BirthdayWisherSMTPLIB)
 17. [ISS Overhead Tracker using API](https://github.com/gizat/playground/tree/main/ISSoverheadAPI)
+18. [Quiz App with GUI & API](https://github.com/gizat/playground/tree/main/QuizAppGUI)
