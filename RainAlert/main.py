@@ -1,19 +1,18 @@
 import requests
-from datetime import datetime
-import time
+import os
+from dotenv import load_dotenv
 
+
+load_dotenv()  # take environment variables from .env.
 OWM_endpoint = "https://api.openweathermap.org/data/2.5/onecall"
-API_KEY = "5f13e15835bca2f8334712f94a3be14f"
-# LAT = 51.160522
-# LNG = 71.470360
-
-LAT = 54.619570
-LNG = 25.244190
+owm_key = os.environ.get("OWM_API_KEY")
+LAT = 51.160522
+LNG = 71.470360
 
 parameters = {
     "lat": LAT,
     "lon": LNG,
-    "appid": API_KEY,
+    "appid": owm_key,
     "exclude": "current,minutely,daily"
 }
 
