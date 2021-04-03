@@ -1,6 +1,8 @@
 import requests
 import os
 from dotenv import load_dotenv
+from requests.api import head
+from datetime import datetime
 
 
 load_dotenv()  # take environment variables from .env.
@@ -32,10 +34,28 @@ exercise_params = {
 
 response = requests.post(url=nutri_endpoint, headers=headers, json=exercise_params)
 result = response.json()
-print(result)
-
 
 ### SHEETY
 
+sheety_header = {
+    "Authorization": "Bearer asdfjaksf723kjasdf8234jmsJHDSF8923",
+    "Content-Type": "application/json"
+}
+
+today_date = datetime.now().strftime("%d/%m/%Y")
+now_time = datetime.now().strftime("%X")
+
 sheety_endpoint = "https://api.sheety.co/9e7c3955c1f93c0cc16948155a0b3f9e/myWorkouts/workouts"
 
+for exercise in result["exercises"]:
+    sheety_params = {
+        "workout": {
+            "date": today_date,
+            "time": now_time,
+            "exercise": exercise["name"].title(),
+            "duration": exercise["duration_min"],
+            "calories": exercise["nf_calories"]
+        }
+    }
+
+sheety_response = requests.post(url=sheety_endpoint, json=sheety_params, headers=sheety_header)
