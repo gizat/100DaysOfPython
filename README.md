@@ -23,3 +23,4 @@ A repo with fun projects. The list of projects:
 19. [Rain Alert using API](https://github.com/gizat/playground/tree/main/RainAlert)
 20. [Stock Trading News App](https://github.com/gizat/playground/tree/main/StockTradingNewsAlert)
 21. [Habit Tracker using Pixela](https://github.com/gizat/playground/tree/main/HabitTracker)
+22. [Workout Tracker using Nutirionix and Sheety](https://github.com/gizat/playground/tree/main/WorkoutTracker)
