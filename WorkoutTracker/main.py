@@ -37,8 +37,10 @@ result = response.json()
 
 ### SHEETY
 
+SHEETY_AUTH = os.environ.get("SHEETY_AUTH")
+
 sheety_header = {
-    "Authorization": "Bearer asdfjaksf723kjasdf8234jmsJHDSF8923",
+    "Authorization": SHEETY_AUTH,
     "Content-Type": "application/json"
 }
 
