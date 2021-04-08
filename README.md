@@ -24,3 +24,4 @@ A repo with fun projects. The list of projects:
 20. [Stock Trading News App](https://github.com/gizat/playground/tree/main/StockTradingNewsAlert)
 21. [Habit Tracker using Pixela](https://github.com/gizat/playground/tree/main/HabitTracker)
 22. [Workout Tracker using Nutirionix and Sheety](https://github.com/gizat/playground/tree/main/WorkoutTracker)
+23. [Scraping 100 Greates Movies](https://github.com/gizat/playground/tree/main/ScrapingData)
