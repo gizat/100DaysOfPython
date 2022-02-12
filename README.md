@@ -1,4 +1,4 @@
-# 100 Days of Code
+# 100 Days of Code - Python
 
 I chose to develop a habit of coding in 2022. The objectives are similar to the [#100DaysOfCode challenge](https://www.100daysofcode.com): to code a minimum an hour every day for the next 100 days. But instead of tweeting the results, I push daily work to this repo. 
 
