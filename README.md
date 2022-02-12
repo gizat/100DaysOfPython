@@ -1,6 +1,10 @@
-# Playground
+# 100 Days of Code
 
-A repo with fun projects. The list of projects:
+This year I chose to develop a habit of coding. The objectives are similar to the #100DaysOfCode challenge: Minimum an hour every day for the next 100 days. But instead of tweeting the results, I push daily work to this repo. 
+
+Languages to master are Python and JavaScript. 
+
+Starting with the projects from Angela Yu's "[100 Days of Code: The Complete Python Pro Bootcamp for 2022](https://www.udemy.com/course/100-days-of-code/)" course on Udemy.
 
 1. [Coffee machine](https://github.com/gizat/playground/tree/main/CoffeeMachine)
 2. [Coffee machine in OOP](https://github.com/gizat/playground/tree/main/CoffeeMachineOOP)
