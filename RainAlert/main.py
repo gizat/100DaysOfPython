@@ -3,6 +3,11 @@ import os
 from dotenv import load_dotenv
 
 
+# Create environment variables using:
+# $ export SECRET_API_KEY=1111111111122222222
+# View updated environments using env command
+
+
 load_dotenv()  # take environment variables from .env.
 OWM_endpoint = "https://api.openweathermap.org/data/2.5/onecall"
 owm_key = os.environ.get("OWM_API_KEY")
