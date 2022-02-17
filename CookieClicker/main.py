@@ -1,14 +1,38 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
 
 service = ChromeService(executable_path="/opt/homebrew/bin/chromedriver")
 driver = webdriver.Chrome(service=service)
 
-ebook_amazon_url = "https://www.amazon.com/gp/product/B084HJSJJ2?storeType=ebooks&pf_rd_p=ea5974d4-92b1-4b54-b3f4-10404cdc55d5&pf_rd_r=MMV1WYA94YVQBSKQH03G&pd_rd_wg=VDDvK&pd_rd_i=B084HJSJJ2&ref_=dbs_0_def_rwt_wigo_cp_recs_wigo_14&pd_rd_w=WuA92&pd_rd_r=43bcbefd-0ee1-4c7b-99fc-fb3b4eb8f38c"
-driver.get(ebook_amazon_url)
-# price = driver.find_element(By.CSS_SELECTOR, ".a-size-base.a-color-price.a-color-price")
-price = driver.find_element(By.XPATH, '//*[@id="a-autoid-9-announce"]/span[2]/span')
-print(price.text)
+cookie_clicker_url = "https://orteil.dashnet.org/experiments/cookie/"
+driver.get(cookie_clicker_url)
+cookie_button = driver.find_element(By.CSS_SELECTOR, "#cookie")
 
-driver.quit()
+store_elements = driver.find_elements(By.CSS_SELECTOR, "#store div")
+ids = {element.get_attribute("id"):0 for element in store_elements}
+
+timeout = time.time() + 5
+five_min = time.time() + 300
+
+while True:
+    cookie_button.click()
+
+    if time.time() > timeout:
+        all_prices = driver.find_elements(By.CSS_SELECTOR, "#store b")
+
+        
+        for element in ids:
+            element.update()
+
+        timeout = time.time() + 5
+
+    if time.time() > five_min:
+        break
+
+
+
+
+
