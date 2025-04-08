@@ -7,7 +7,3 @@ Why Python? I find it fun and practical — especially for robotics projects in 
 I actually started this course few years ago but never finished it. Back then, I was just launching my business and didn’t have the time to practice or apply what I learned.
 
 This time, I’m giving it a proper go. Let’s see how far I can get! 🚀
-
-## Projects
-
-2025-04-08: 
