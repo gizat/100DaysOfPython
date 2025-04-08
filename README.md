@@ -1,6 +1,6 @@
 # 100 Days of Code - Python 🐍
 
-I’ve recently decided to brush up on my programming skills and started a 100 Days of Code challenge. Angela Yu's "[100 Days of Code: The Complete Python Pro Bootcamp for 2022](https://www.udemy.com/course/100-days-of-code/)" course on Udemy.
+I’ve recently decided to brush up on my programming skills and started a 100 Days of Code challenge. Angela Yu's [Python course](https://www.udemy.com/course/100-days-of-code/) on Udemy.
 
 Why Python? I find it fun and practical — especially for robotics projects in my business.
 
